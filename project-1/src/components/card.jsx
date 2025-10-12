@@ -1,4 +1,9 @@
-function Card(){
-    return <h1>This is Card Component</h1>
+import React from 'react'
+
+const card = () => {
+  return (
+    <div>card</div>
+  )
 }
-export default Card;
+
+export default card
