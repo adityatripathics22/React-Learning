@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Cards from './components/cards.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className ="parent" >
+      <Cards user = 'aditya' img ='https://images.unsplash.com/photo-1760694121380-0dc12e8ac00f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764' />
+      <Cards user = 'saurabh' img='https://images.unsplash.com/photo-1760709072133-2472415b05f4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687' />
+      
+      
+    </div>  
   )
 }
 
 export default App
+
+
+
+
+
+// Type	Example	Capitalization Rule
+// React Component	    import App from './App'       	✅ Must start with Capital (React convention)
+// Utility Function	     import { add } from './math'	        ✅ Usually lowercase
+// Constant/Object	     import config from './config'	     ✅ Usually lowercase
